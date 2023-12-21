@@ -5,6 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("Hello, world!")
+    return HttpResponse("ВЫ НАХОДИТЕСЬ НА ГЛАВНОЙ СТРАНИЦЕ")
 def about(request):
-    return HttpResponse("About us")
+    return HttpResponse("ЕЩЕ ОДНА СТРАНИЦА")
