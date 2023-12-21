@@ -133,27 +133,63 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Добавление логгирования
-LOGGING = {
+# LOGGING = {                            # Добавление логгирования
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#         'class': 'logging.StreamHandler',
+#         },
+#         'file': {
+#         'class': 'logging.FileHandler',
+#         'filename': 'django.log',
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#         'handlers': ['console', 'file'],
+#         'level': 'INFO',
+#         },
+#         'myproject': {
+#         'handlers': ['console'],#  'handlers': ['console', 'file'],
+#         'level': 'DEBUG',
+#         'propagate': True,
+#         },
+#     },
+# }
+
+LOGGING = {                     # Добавление форматирования
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process} {thread} {message}',
+            'style': '{',
+            },
+            'simple': {
+            'format': '%(levelname)s %(message)s'
+            },
+        },
     'handlers': {
         'console': {
-        'class': 'logging.StreamHandler',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose', # добавлен параметр formatter
+            },
+            'file': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django.log',
+            'formatter': 'verbose', # добавлен параметр formatter
+            },
         },
-        'file': {
-        'class': 'logging.FileHandler',
-        'filename': 'django.log',
-        },
-    },
     'loggers': {
         'django': {
-        'handlers': ['console', 'file'],
-        'level': 'INFO',
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            },
+            'myproject': {
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+            },
         },
-        'myapp': {
-        'handlers': ['console'],
-        'level': 'DEBUG',
-        'propagate': True,
-        },
-    },
-}
+    }

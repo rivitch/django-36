@@ -1,0 +1,36 @@
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 32
+"GET / HTTP/1.1" 200 64
+D:\GB\TASKS\django-35\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 64
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 64
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 64
+"GET /about/ HTTP/1.1" 200 32
+"GET / HTTP/1.1" 200 64
+"GET /about/ HTTP/1.1" 200 32
+"GET /lec1_1app/about/ HTTP/1.1" 200 8
+"GET /lec1_1app/ HTTP/1.1" 200 13
+D:\GB\TASKS\django-35\myproject\lec1_1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\basisapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\lec1_1app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\TASKS\django-35\myproject\myproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
